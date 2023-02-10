@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.mycompany.ejercicioled.ShapeLed?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="236.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.ejercicioled.PrimaryController">
+   <top>
+      <ColorPicker fx:id="colorPicker" onAction="#cambiocolorBorder" BorderPane.alignment="TOP_LEFT" />
+   </top>
+   <center>
+      <ShapeLed fx:id="shapeLed"  prefHeight="282.0" prefWidth="444.0" BorderPane.alignment="CENTER_LEFT" />
+   </center>
+   <bottom>
+      <ToggleButton fx:id="switchLed" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="ToggleButton" BorderPane.alignment="TOP_LEFT" />
+   </bottom>
+</BorderPane>
