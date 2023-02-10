@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.input.MouseEvent;
@@ -24,43 +25,29 @@ public class PrimaryController implements Initializable {
     @FXML
     private ToggleButton switchLed;
 
-//Listener
-   /* @FXML
+    //Ejercicio 4.
+    @FXML
     private void detenerLed(MouseEvent event) {
 
         if (shapeLed.isBlinking()) {
             shapeLed.setBlinking(false);
         } else {
-
             shapeLed.setBlinking(true);
         }
 
     }
-//Metodo cambiar color con el raton
-   /* @FXML
-    private void cambioColor(MouseEvent event) {
-
-        shapeLed.setLedColor(Color.AQUA);
-    }
 
     @FXML
-    private void detenerColor(MouseEvent event) {
+    private void cambioColor(ActionEvent event) {
 
-        shapeLed.setLedColor(Color.RED);
-    }*/
+        shapeLed.setLedColor(colorPicker.getValue());
+
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }
 
-  
-
-    @FXML
-    private void cambiocolorBorder(ActionEvent event) {
-     
-        Color color = colorPicker.getValue();
-        
+        shapeLed.setLedColor(Color.MAGENTA);
     }
 
 }
